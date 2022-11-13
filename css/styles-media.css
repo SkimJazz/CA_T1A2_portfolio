@@ -1,0 +1,367 @@
+/* Coder Academy - Standard 2022
+    filename: [T1A2-Profile]
+    author: [Joshua Bennett]
+    author ID: [13399]
+    description: [MEDIA style sheet]
+        Screen sizes greater than 600px will flex to display content in the following containers.
+*/
+
+@media screen and (min-width: 600px) {
+
+    /*==================== ALL PAGEs =====================*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-links li {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-links {
+        padding: 0;
+    }
+    .heading-intro {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 40px;
+        font-size: 2.5em;
+    }
+    #rawpixel {
+        position: relative;
+        top: 1px;
+        font-size: small;
+        color: rgba(169, 169, 169, 0.178)
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .socials img {
+        margin-right: 20px;
+    }
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        background: rgb(48, 56, 65);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        max-width: 260px;
+    }
+
+    /*=========================== INDEX PAGE ========================*/
+  
+    #mad-intro {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        font-size: 4em;
+    }
+    /*  */
+    #adj-pos {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 108.03px;
+    }
+    #mad-intro sup {
+        font-size: 30px;
+    }
+    .index-middle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 1100px;
+        margin: auto;
+    }
+    /* margin added for index-skill container alignment */
+    #compress {
+        margin-bottom: 26px;
+    }
+    .design-icon {
+        width: 95px;
+        align-content: center;
+    }
+    .build-icon {
+        width: 105px;
+        align-content: center;
+    }
+    .data-icon {
+        width: 100px;
+        align-content: center;
+    }
+    .index-skill p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+
+    /*=========================== ABOUT PAGE  ========================*/
+    
+    /***** profile container *****/
+    .profile-intro {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        max-width: 85%;
+    }
+    .profile-img img {
+        min-width: 225px
+    }
+    .profile-text h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .profile-text p {
+        max-width: 600px;
+        padding-bottom: 20px;
+    }
+    .profile-text {
+        text-align: left;
+    }
+    
+    /***** about me MAD Skills + Interests section *****/
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+    }
+    .skills-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 85%;
+    }
+    .skills-row img {
+        min-width: 70%;
+    }
+    /* skills engineering container img position adjustments */
+    #engo-con {
+        padding-left: 5px;
+        padding-right: 7px;
+    } 
+    #engo-img {
+        min-width: 78%;
+    }
+    /* interest tech container text position adjustment */
+    #tech-text {
+        padding-left: 5px;
+    }
+  
+    .skills-text  {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .skills-text h3 {
+        text-align: left;
+        border-bottom: 1px solid rgb(0, 109, 181);
+        padding-bottom: 5px;
+        padding-top: 0;
+    }
+    .skills-text p {
+        padding-top: 10px;
+    }
+    /* skills & interests engineering icons by vecteezy  */
+    #about-icons {
+        display: flex;
+        padding: 0;
+        font-size: small;
+        color: rgba(169, 169, 169, 0.178)
+    }
+
+    /*======================== PROJECTS PAGE  =======================*/
+    
+    /* id selector use in CURRENT and COMPLETED <section>s 
+    for altinating from left to right using row-reverse*/
+    #reverse-row {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /* padding between img and text container */
+    .pad-right {
+        margin-right: 15px;
+    }
+    .pad-left {
+        padding-left: 15px;
+    }
+
+    /******** css for CURRENT PROJECTS <section> ********/
+    .current-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 850px;
+    }
+    .current-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 93%;
+    }
+    .current-row img {
+        min-width: 150px;
+        border-radius: 5%;
+        box-shadow: 0 0 20px 10px #383838bd;
+        object-fit: contain;
+    }
+    .current-text h3 {
+        text-align: left;
+        border-bottom: 1px solid rgba(236, 33, 33, 0.692);
+        padding-bottom: 5px;
+    }
+    .current-text p {
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    /***** css for COMPLETED PROJECTS <section> *****/
+    .completed-projects {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        max-width: 850px;
+    }
+    .completed-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        width: 93%;
+    }
+    .completed-row img {
+        width: 100%;
+        border-radius: 5%;
+    }
+    /* top secret img adj*/
+    #secret-glo {
+        max-width: 400px;
+    }
+    
+    .completed-text h3 {
+        text-align: left;
+        border-bottom: 1px solid rgba(236, 33, 33, 0.692);
+        padding-bottom: 5px;
+    }
+    .completed-text p {
+        padding-top: 10px;
+    }
+    
+
+    /*========================== BLOG PAGE ==========================*/
+
+    /* Display <artical> and <aside>  */
+    
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+    }
+    .blog-articals {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        box-sizing: border-box;
+        width: 80%;
+    }
+    .blog-row  {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        padding-right: 40px;
+        border-right: 5px dotted rgb(75, 41, 201);
+    }
+    /* adj img ref src */
+    #adj-80s-article a {
+        text-align: center;
+        font-size: small;
+        color: rgba(169, 169, 169, 0.178)
+    }
+    .blog-row img {
+        width: 100%;
+    }
+    
+    .blog-text p {
+        text-align: left;
+    }
+    .blog-sidebar {
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+        padding-top: 0;
+    }
+    .sidebar-row {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+    .blog-sidebar img {
+        max-width: 50%;
+    }
+
+    /*========================== BLOG POSTS =========================*/
+
+    .blog-post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px;
+    }
+    .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .post-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .post img {
+        width: 60%;
+    }
+    .blog-post-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .blog-post-text h3, h4 {
+        text-align: left;
+        padding-top: 15px;
+        border-bottom: 1.5px solid rgb(109, 109, 109);
+    }
+    /* can't include the following <p> tag in the above css */
+    .blog-post-text p {
+        text-align: left;
+        padding-top: 15px;
+        border-bottom: 1.5px solid rgb(109, 109, 109);
+    }
+
+ 
+}
+

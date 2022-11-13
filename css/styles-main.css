@@ -1,0 +1,590 @@
+/* Coder Academy - Standard 2022
+    filename: [T1A2-Profile]
+    author: [Joshua Bennett]
+    author ID: [13399]
+    description: [MAIN style sheet]
+        Screen sizes lessthan 600px
+*/
+
+/* ====================== CSS applied to all pages ================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(27, 27, 27);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(217, 217, 217);
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 300px;
+    min-height: 150vh;
+}
+
+/* Dotted lines used to separate section containers  */
+hr {
+    border-color: rgb(249, 178, 8);
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 20%;
+    margin: 50px auto;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+}
+.header-img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.nav-links li {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* alicate hover back-ground color for each html page */
+.nav-links li a:hover {
+    background-color: rgb(217, 217, 217);
+    border-radius: 5px;
+}
+#yellow :hover {
+    color: rgb(217, 217, 217);
+    background-color: rgba(255, 187, 0, 0.562);
+}
+#y-border {
+    border: 2px solid rgb(255, 187, 0);
+    border-radius: 5px;
+}
+#blue :hover {
+    color: rgb(217, 217, 217);
+    background-color: rgba(90, 164, 214, 0.50);
+}
+#b-border {
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 5px;
+}
+#red :hover {
+    color: rgb(217, 217, 217);
+    background-color: rgba(255, 0, 0, 0.50);
+}
+#r-border {
+    border: 2px solid rgba(255, 0, 0, 0.856);
+    border-radius: 5px;
+}
+#purple :hover {
+    color: rgb(217, 217, 217);
+    background-color: rgba(140, 0, 255, 0.50);
+}
+#p-border {
+    border: 2px solid rgb(140, 0, 255);
+    border-radius: 5px;
+}
+
+/* refer <header> element selector for font-family
+    => to overide font text class/id selector */
+li, a {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px;
+    color: rgb(217, 217, 217);
+    text-decoration: none;
+}
+
+/* ALL PAGES: <nav> header <section> background img tinting */
+.top-all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.5) 100%), url('../css/images/back-img-top.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgb(87, 87, 87);
+}
+/* <section> header background img ref */
+#rawpixel {
+    position: relative;
+    top: 1px;
+    font-size: small;
+    color: rgba(169, 169, 169, 0.315)
+}
+/* page intro: all page except for index page */
+.heading-intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    font-size: 1.6em;
+}
+#intro-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size: 20px;
+}
+#super {
+    font-size: small;
+}
+footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;  
+    height: 20vh; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border-top: 1px solid rgb(87, 87, 87);
+    color: rgb(217, 217, 217);
+    padding: 40px 60px;
+}
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.socials img {
+    width: 20px;
+    height: 20px;
+}
+.copy-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px 10px 5px;
+    /* margin: 10px 5px; */
+}
+#contacts {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    color: rgba(169, 169, 169, 0.37)
+}
+
+
+/***************************** INDEX PAGE ****************************/
+#index-icon-ref {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    font-size: small;
+    color: rgba(169, 169, 169, 0.178)
+}
+#mad-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2.5em;
+    padding-top: 40px;
+}
+/* MAD intro container offset alignment */
+#adj-pos {
+    padding-left: 72.02px;
+}
+#mad-intro sup {
+    font-size: 20px;
+}
+
+/* <main> container width containment */
+.index-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    margin: 20px auto;
+}
+.index-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 20px 10px;
+    text-align: left;
+}
+.design-icon {
+    width: 80px;
+    align-content: center;
+}
+.build-icon {
+    width: 95px;
+    align-content: center;
+ }
+ .data-icon {
+    width: 85px;
+    align-content: center;
+ }
+.index-middle img {
+    padding-bottom: 5px;
+}
+.index-middle h2 {
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid rgb(249, 178, 8);
+}
+.index-middle p {
+    padding-top: 30px;
+}
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    color: rgb(217, 217, 217);
+}
+
+/* needed to separate <h2> and <a> containers */
+#devide {
+    margin-bottom: 30px;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    background: rgb(48, 56, 65);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.btn:hover {
+    background: rgb(0, 109, 181);
+    color: rgb(217, 217, 217);
+}
+
+
+/***************************** ABOUT PAGE ****************************/
+
+/* Dotted line deviders */
+.about-dots {
+    border-color: rgba(90, 164, 214, 0.692);
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 20%;
+    margin: 50px auto;
+}
+
+/* about me image and profile intro section */
+.profile-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    margin: 20px auto;
+}
+.profile-img img {
+    max-width: 100%;
+    border-radius: 10%;
+    object-fit: contain;
+    filter: grayscale(1);
+}
+.profile-text {
+    max-width: 90%;
+}
+.profile-text h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(90, 164, 214, 0.692);
+}
+.profile-text p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(90, 164, 214, 0.692);
+}
+
+/* about me MAD Skills + Interests section */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 380px;
+    margin: 20px auto 20px auto;
+}
+.skills-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 20px auto;
+}
+.skills-row img {
+    width: 40%;
+    /* border-radius: 10%; */
+    padding-bottom: 10px;
+}
+.skills-text h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(90, 164, 214, 0.692);
+}
+.skills-text p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(90, 164, 214, 0.692);
+}
+/* skills & interests engineering icons by vecteezy  */
+#about-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: small;
+    color: rgba(169, 169, 169, 0.178)
+}
+
+
+/*************************** PROJECTS PAGE *************************/
+
+/* Dotted line deviders */
+.projects-dots {
+    border-color: rgba(236, 33, 33, 0.418);
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 20%;
+    margin: 50px auto;
+}
+
+/***** Current Projects *****/
+.current-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 20px auto;
+}
+#pro-icon-ref {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding-bottom: 5px;
+    color: rgba(169, 169, 169, 0.178)
+}
+.current-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.current-row img {
+    width: 60%;
+    border-radius: 5%;
+    box-shadow: 0 0 20px 10px #383838bd;
+    object-fit: contain;
+}
+.current-projects h3 {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(236, 33, 33, 0.692);
+}
+.current-projects p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(236, 33, 33, 0.692);
+}
+
+/***** Completed Projects *****/
+.completed-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 85%;
+}
+.completed-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.completed-row img {
+    width: 60%;
+    border-radius: 5%;
+}
+
+.completed-projects h3 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(236, 33, 33, 0.692);
+}
+.completed-projects p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(236, 33, 33, 0.692);
+}
+/* top secret img background glow */
+#secret-glo {
+    box-shadow: 0 0 20px 10px #6d1616bd;
+    border-radius: 5%;
+}
+/* top secret text redacted blur */
+#redacted span {
+    filter: blur(4px);
+}
+
+
+
+/***************************** BLOG PAGE ****************************/
+.blog-dots {
+    border-color: rgb(75, 41, 201);
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 20%;
+    margin: 50px auto;
+}
+#blog-topic {
+    padding-bottom: 20px;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    margin: 10px auto;
+}
+.blog-articals {
+    display: flex;
+    flex-direction: column;
+}
+.blog-row  {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+/* adj 80s-img padding */
+#adj-80s-article img {
+    padding: 0;
+}
+/* adj img ref src */
+#adj-80s-article a {
+    text-align: center;
+    font-size: small;
+    color: rgba(169, 169, 169, 0.178)
+}
+.blog-row h3 {
+    text-align: left;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px solid rgb(75, 41, 201);
+}
+.blog-row p {
+    text-align: left;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px solid rgb(75, 41, 201);
+}
+.blog-row img {
+    width: 100%;
+    border-radius: 5%;
+    padding-bottom: 10px;
+}
+
+/* <aside> container for <article>s */
+.blog-sidebar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-width: 320px;
+    padding-top: 15px;
+}
+.sidebar-row {
+    max-width: 80px;
+}
+.blog-sidebar img {
+    width: 100%;
+    border-radius: 10%;
+    padding: 5px;
+}
+.blog-sidebar h3 {
+    font-size: x-small;
+}
+#btn-read-mobi {
+    display: flex;
+    flex-direction: column;
+    background: rgb(48, 56, 65);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+/*========================== BLOG POSTS =========================*/
+
+.blog-post-height {
+    min-height: 60vh;
+}
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 50px auto;
+    width: 80%;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.post img {
+    width: 300px;
+    border-radius: 5%;
+}
+.post a {
+    text-align: center;
+    font-size: small;
+    color: rgba(169, 169, 169, 0.178)
+}
+.blog-post-text h3, h4 {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid rgb(109, 109, 109);
+}
+/* can't include the following <p> tag in the above css */
+.blog-post-text p {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid rgb(109, 109, 109);
+}
