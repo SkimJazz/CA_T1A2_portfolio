@@ -1,11 +1,8 @@
 # **Coder Academy - T1A2 Portfolio**
 
- 
-Link: [GitHub Repo](https://github.com/SkimJazz/CA_T1A2_portfolio)
+[Website Portfolio](https://skimjazz.github.io/CA_T1A2_portfolio/)
 
-Link: [Website Portfolio](https://skimjazz.github.io/CA_T1A2_portfolio/)
 
-Link: [Presentation](https://www.loom.com/share/b63b85cca1fe41c9b2d5648794a1deaa)
 ## **Purpose of this Website Portfolio**
 
 The purpoes of this Website Portfolio is to demonstrate my skills and experience as an emerging Full Stack Developer. 
